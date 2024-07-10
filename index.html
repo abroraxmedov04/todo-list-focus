@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .done {
+        text-decoration: line-through;
+      }
+      .error {
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" name="myForm">
+      <input
+        type="text"
+        placeholder="add task"
+        aria-placeholder="add task"
+        name="myInput"
+        style="outline: none"
+      />
+      <button>Add</button>
+    </form>
+
+    <ul id="list"></ul>
+
+    <template class="templateTask">
+      <li class="item">
+        <input type="checkbox" class="check-box" />
+        <p class="task-text">tasks</p>
+        <button class="edit-btn">edit</button>
+        <button class="delete-btn">delete</button>
+      </li>
+    </template>
+    <script src="./practice.js"></script>
+  </body>
+</html>
